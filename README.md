@@ -13,6 +13,7 @@ native UnLockThread(lockid);
 Exemplos:<br />
 <li>CreateThread:</li>
 ```pawn
+
 new tickid;
 
 public OnGameModeInit()
