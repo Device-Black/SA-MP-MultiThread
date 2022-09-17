@@ -9,10 +9,7 @@ native DestroyThread(threadid);
 native SleepThread(milliseconds); // Use em threads (public)
 native LockThread(threadid); // Sincronizar e retornar id do bloqueio
 native UnLockThread(lockid);
-```
-Exemplos:<br />
-� CreateThread
-```pawn
+
 new tickid;
 
 public OnGameModeInit()
