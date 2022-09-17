@@ -1,8 +1,7 @@
 # SA-MP-MultiThread
 Multithreading by Fro1sha
 
-Natives:
-```cpp
+Natives: ```cpp
 native CreateThread(const pubname[]);
 native CreateThreadEx(const pubname[]);
 native DestroyThread(threadid);
