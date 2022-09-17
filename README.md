@@ -31,31 +31,3 @@ public MyFunction(threadid)
 	SleepThread(1000);
 }```
 
-CreateThreadEx:
-```pawn
-new bool:active;
-new tickid;
-
-public OnGameModeInit()
-{
-	tickid = CreateThreadEx("MyFunction");
-}
-
-public OnGameModeExit()
-{
-	active = false;
-}
-
-public MyFunction(threadid)
-{
-	active = true;
-	
-	while (active)
-	{
-		printf("tick(%d)...", threadid );
-		SleepThread(1000);
-	}
-}
-```
-
-
