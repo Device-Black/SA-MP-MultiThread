@@ -2,14 +2,14 @@
 Multithreading by Fro1sha
 
 Natives:
-[code]
+```cpp
 native CreateThread(const pubname[]);
 native CreateThreadEx(const pubname[]);
 native DestroyThread(threadid);
-native SleepThread(milliseconds); // Use em threads (public)
-native LockThread(threadid); // Sincronizar e retornar id do bloqueio
-native UnLockThread(lockid);[/code]
-
+native SleepThread(milliseconds);
+native LockThread(threadid);
+native UnLockThread(lockid);
+```
 ```pawn
 new tickid;
 
