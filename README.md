@@ -26,8 +26,34 @@ public OnGameModeExit()
 
 public MyFunction(threadid)
 {
-	printf("tick(%d)...", threadid );
+	printf("tick(%d)...", threadid);
 	SleepThread(1000);
+}
+```
+```pawn
+// Com CreateThreadEx
+new bool:active;
+new tickid;
+
+public OnGameModeInit()
+{
+	tickid = CreateThreadEx("MyFunction");
+}
+
+public OnGameModeExit()
+{
+	active = false;
+}
+
+public MyFunction(threadid)
+{
+	active = true;
+
+	while (active)
+	{
+		printf("tick(%d)...", threadid );
+		SleepThread(1000);
+	}
 }
 ```
 
