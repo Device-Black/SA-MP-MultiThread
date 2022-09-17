@@ -1,7 +1,6 @@
 # SA-MP-MultiThread
 Multithreading by Fro1sha
 
-Natives:
 ```cpp
 // Natives
 native CreateThread(const pubname[]);
@@ -12,6 +11,7 @@ native LockThread(threadid);
 native UnLockThread(lockid);
 ```
 ```pawn
+// Com CreateThread
 new tickid;
 
 public OnGameModeInit()
