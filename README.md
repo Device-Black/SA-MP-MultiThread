@@ -2,14 +2,15 @@
 Multithreading by Fro1sha
 
 Natives:
-```pawn
+```cpp
 native CreateThread(const pubname[]);
 native CreateThreadEx(const pubname[]);
 native DestroyThread(threadid);
 native SleepThread(milliseconds); // Use em threads (public)
 native LockThread(threadid); // Sincronizar e retornar id do bloqueio
-native UnLockThread(lockid);
+native UnLockThread(lockid);```
 
+```pawn
 new tickid;
 
 public OnGameModeInit()
@@ -26,5 +27,5 @@ public MyFunction(threadid)
 {
 	printf("tick(%d)...", threadid );
 	SleepThread(1000);
-}
+}```
 
