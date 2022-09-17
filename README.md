@@ -11,9 +11,8 @@ native LockThread(threadid); // Sincronizar e retornar id do bloqueio
 native UnLockThread(lockid);
 ```
 Exemplos:<br />
-<li>CreateThread:</li>
+� CreateThread
 ```pawn
-
 new tickid;
 
 public OnGameModeInit()
@@ -30,8 +29,8 @@ public MyFunction(threadid)
 {
 	printf("tick(%d)...", threadid );
 	SleepThread(1000);
-}
-```
+}```
+
 CreateThreadEx:
 ```pawn
 new bool:active;
