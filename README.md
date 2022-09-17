@@ -28,5 +28,6 @@ public MyFunction(threadid)
 {
 	printf("tick(%d)...", threadid );
 	SleepThread(1000);
-}```
+}
+```
 
