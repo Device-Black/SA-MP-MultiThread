@@ -1,7 +1,8 @@
 # SA-MP-MultiThread
 Multithreading by Fro1sha
 
-Natives:```pawn
+Natives:
+```pawn
 native CreateThread(const pubname[]);
 native CreateThreadEx(const pubname[]);
 native DestroyThread(threadid);
@@ -10,7 +11,8 @@ native LockThread(threadid); // Sincronizar e retornar id do bloqueio
 native UnLockThread(lockid);
 ```
 Exemplos:<br />
-<li>CreateThread:</li>```pawn
+<li>CreateThread:</li>
+```pawn
 new tickid;
 
 public OnGameModeInit()
@@ -28,7 +30,9 @@ public MyFunction(threadid)
 	printf("tick(%d)...", threadid );
 	SleepThread(1000);
 }
-```� CreateThreadEx:```pawn
+```
+CreateThreadEx:
+```pawn
 new bool:active;
 new tickid;
 
